@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo rm /etc/dhcpcd.conf
+sudo cp /etc/dhcpcd.conf_hotspot /etc/dhcpcd.conf
+sudo service dhcpcd restart
+sudo service dnsmasq restart
+sudo service hostapd restart
+echo "done"
